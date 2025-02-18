@@ -1,66 +1,71 @@
-**Digital Clock App**
+# Digital Clock App
 
-Project Description:
+## Project Description
 
-A simple and elegant Digital Clock Application built using React. This app displays the current time, dynamically updated every second, with a sleek and modern design.
+A **simple and elegant** Digital Clock Application built using **React**. This app displays the **current time**, dynamically updated every second, with a **sleek and modern design**.
 
-Features:
+## Features
 
-* Real-Time Clock: Displays the current hour, minute, and second in 12-hour format with AM/PM indication.
-* Responsive Design: Adapts beautifully to any screen size with a centered layout.
-* Styling:
-1. Monospace font for a classic digital clock feel.
-2. Blurred background effect for enhanced aesthetics.
-3. Clean and minimalistic design with dark theme.
+- **Real-Time Clock:** Displays the current **hour, minute, and second** in **12-hour format** with AM/PM indication.
+- **Responsive Design:** Adapts beautifully to any screen size with a centered layout.
+- **Styling:**
+  - Monospace font for a **classic digital clock feel**.
+  - Blurred background effect for **enhanced aesthetics**.
+  - Clean and minimalistic design with **dark theme**.
 
-Code Overview:
+## Code Overview
 
-React Components
+### React Components
 
-1. DigitalClockApp:
+#### `DigitalClockApp`
+- Manages the clock state using the **useState** and **useEffect** hooks.
+- Updates the clock every second with the help of `setInterval`.
+- Formats time in **12-hour format** and ensures **leading zeros** using a helper function.
 
-* Manages the clock state using the useState and useEffect hooks.
-* Updates the clock every second with the help of setInterval.
-* Formats time in 12-hour format and ensures leading zeros using a helper function.
-2. App:
-  
-* Wraps and renders the DigitalClockApp component.
+#### `App`
+- Wraps and renders the **DigitalClockApp** component.
 
-Styling:
+### Styling
 
-* Written in CSS to ensure a modern and visually appealing interface:
-* Dark background with a subtle blurred effect.
-* Large, bold, and centered clock text for better readability.
-* Text shadow for a soft glowing effect.
+- Written in **CSS** to ensure a **modern and visually appealing interface**:
+  - **Dark background** with a subtle **blurred effect**.
+  - **Large, bold, and centered clock text** for better readability.
+  - **Text shadow** for a soft **glowing effect**.
 
-Key Methods:
+## Key Methods
 
-* fozrmatTime(): Converts the current time into a user-friendly 12-hour format with AM/PM.
-* padZero(number): Ensures single-digit numbers are padded with a leading zero.
+- `formatTime()`: Converts the current time into a **user-friendly 12-hour format** with AM/PM.
+- `padZero(number)`: Ensures **single-digit numbers** are padded with a **leading zero**.
 
-How to Run:
+## How to Run
 
-* Clone the repository: git clone <repository-url>
+1. **Clone the repository:**
+   ```sh
+   git clone <repository-url>
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd digital-clock-app
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Start the application:**
+   ```sh
+   npm start
+   ```
+5. **Open your browser** and visit **http://localhost:3000** to see the Digital Clock App in action.
 
-* Navigate to the project directory: cd digital-clock-app
+## Folder Structure
 
-* Install dependencies: npm install
-
-* Start the application: npm start
-
-* Open your browser and visit http://localhost:3000 to see the Digital Clock App in action.
-
-Folder Structure:
-
+```
 ├── App.js               # Main app component
-
 ├── DigitalClockApp.jsx  # Digital clock component
-
 ├── index.js             # Entry point
-
 ├── App.css              # Styling
-
 └── index.css            # Global styles
+```
 
 # React + Vite
 
