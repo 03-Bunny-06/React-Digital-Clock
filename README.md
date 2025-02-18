@@ -67,6 +67,8 @@ A **simple and elegant** Digital Clock Application built using **React**. This a
 └── index.css            # Global styles
 ```
 
+![image](https://github.com/user-attachments/assets/53e99642-e2d6-4992-bdf9-9e2e3511452c)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
